@@ -1,0 +1,102 @@
+.profile {
+  font-family: $ralewayRegular;
+
+  img {
+    width: 100%;
+  }
+
+  .center-alignment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    background: url(../images/profile-bg.png);
+    background-size: cover;
+    padding: 10px 20px 150px 20px;
+    @extend .center-alignment;
+  }
+
+  &__top-text {
+    font-size: font-size(25);
+    color: $white;
+    margin: 0;
+  }
+
+  &__subtitle {
+    position: relative;
+    align-items:flex-start;
+    padding: 20px;
+    background: $white;
+    @extend .center-alignment;
+  }
+
+  &__articles,
+  &__followers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $gray;
+  }
+
+  &__articles-number,
+  &__followers-number {
+    font-size: font-size(35);
+    color: $black;
+  }
+
+
+  &__avatar {
+    min-width: 150px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+  }
+
+  &__user-info {
+    padding: 20px;
+    background: $white;
+    border-bottom:1px solid $gray;
+    @extend .center-alignment;
+  }
+
+  &__user-data {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    line-height: 1;
+  }
+
+  &__user-name {
+    text-align: center;
+    font-family: $ralewayHeavy;
+    font-size: font-size(40);
+  }
+
+  &__photo,
+  &__like {
+    max-width: 30px;
+    cursor: pointer;
+  }
+
+  &__new-feed {
+    padding: 30px 20px;
+    background: $white;
+
+    img {
+      display: block;
+      max-width: 55px;
+      margin: 0 auto;
+      cursor: pointer;
+    }
+
+    p {
+      font-size: font-size(30);
+      text-align: center;
+      color: $gray;
+      padding-top: 20px;
+      margin: 0;
+    }
+  }
+}

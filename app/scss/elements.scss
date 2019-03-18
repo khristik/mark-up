@@ -1,0 +1,84 @@
+.nav-icon {
+  width: 30px;
+  height: 21px;
+  position: relative;
+  cursor: pointer;
+
+  &--white {
+    span {
+      background: $white;
+    }
+  }
+
+  &--black {
+    span {
+      background: $black;
+    }
+  }
+
+  span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+
+    &:nth-child(1) {
+      top: 0px;
+    }
+
+    &:nth-child(2) {
+      top: 8px;
+    }
+
+    &:nth-child(3) {
+      top: 16px;
+    }
+  }
+}
+
+.search-icon {
+  width: 28px;
+  height: 26px;
+  cursor: pointer;
+
+  &--white {
+    background: url(../images/search_white.png);
+    background-size: cover;
+  }
+
+  &--black {
+    background: url(../images/search_black.png);
+    background-size: cover;
+  }
+}
+
+.page-header {
+  font-size: font-size(24);
+  margin: 0;
+
+  &--white {
+    color: $white;
+  }
+
+  &--dark {
+    color: $black;
+  }
+}
+
+.refresh-el {
+  background: $white;
+
+  p {
+    font-family: $ralewayRegular;
+    font-size: font-size(20);
+    color: $gray;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    word-spacing: 1px;
+    cursor: pointer;
+  }
+}

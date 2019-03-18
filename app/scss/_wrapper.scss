@@ -1,0 +1,14 @@
+.wrapper {
+  background: url('../images/BG-img.png') no-repeat;
+  background-position: top;
+  background-size: contain;
+  padding-top: 100px;
+  padding-bottom: 1000px;
+}
+
+@include media-breakpoint-down(lg) {
+  .wrapper {
+    background-size: cover;
+    padding-bottom: 100px;
+  }
+}

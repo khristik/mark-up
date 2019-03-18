@@ -1,0 +1,19 @@
+// Fonts
+$ralewayRegular: 'raleway-regular';
+$ralewayHeavy: 'raleway-heavy';
+
+// Colors
+$dark-main: #002B41;
+$gray: #D5D9DE;
+$white: #ffffff;
+$green: #058000;
+$blue: #00c8e8;
+$purple: #4b0084;
+
+// Font-size
+$base-font-size: 16;
+
+
+@function font-size($pixels) {
+  @return ($pixels / $base-font-size) + rem;
+}

@@ -1,0 +1,52 @@
+.header {
+  &__logo {
+    max-width: 100px;
+    margin: 0 auto;
+
+    img {
+      margin-bottom: 50px;
+      width: 100%;
+    }
+  }
+
+  &__title {
+    font-family: $ralewayHeavy;
+    font-size: font-size(60);
+    margin-bottom: 30px;
+    @extend .text;
+  }
+
+  &__subtitle {
+    font-family: $ralewayRegular;
+    font-size: font-size(25);
+    position: relative;
+    margin-bottom: 100px;
+    @extend .text;
+
+    &:before {
+      position: absolute;
+      content: "";
+      height: 2px;
+      background-color: $gray;
+      width: 5%;
+      margin-left: calc(-5% - 15px);
+      top: 50%;
+    }
+
+    &:after {
+      position: absolute;
+      content: "";
+      height: 2px;
+      background-color: $gray;
+      width: 5%;
+      margin-left: 15px;
+      top: 50%;
+    }
+  }
+
+  .text {
+    color: $dark-main;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
